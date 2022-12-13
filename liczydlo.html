@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatibile" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azymuty</title>
+    <link href="liczydlo.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+    <main>
+        <h1>Zanim zaczniesz używać</h1>
+        <ul style="width: 300px; display: inline-block; text-align:left">
+            <li>Kąty wprowadzaj tylko w radianach</li>
+            <li>Math.sin(x) = sin(x)</li>
+            <li>Math.sqrt(x) = x^(1/2)</li>
+            <li>Math.pow(x,2)= x^2</li>
+            <li>Jeżeli ktoś uważa że się pomyliłem w wprowadzaniu wzorów, kontakt R. Korszla</li>
+        </ul>
+        <h1>Grady na radiany</h1>
+        <div style="width: 100%;"><a>Grady: np 235,5150</a><input type="number" id="gradrad"></div>
+        <button onclick="gradrad()">Licz</button><br>
+        <p id="gradradoutput" class="output">a</p>
+        <h1>Stopnie na radiany</h1>
+        <div style="width: 100%;"><a>Stopnie: np 326,8956</a><input type="number" id="stoprad"></div>
+        <button onclick="stoprad()">Licz</button><br>
+        <p id="stopradoutput" class="output">a</p>
+        <h1>Zad 1</h1>
+        <div style="width: 100%;"><p>p = prawa, l = lewa, s = środek</p><a>side</a><input type="text" id="zad1-side"></div>
+        <div style="width: 100%;"><a>Xa</a><input type="number" id="zad1-Xa"></div>
+        <div style="width: 100%;"><a>Ya</a><input type="number" id="zad1-Ya"></div>
+        <div style="width: 100%;"><a>Xb</a><input type="number" id="zad1-Xb"></div>
+        <div style="width: 100%;"><a>Yb</a><input type="number" id="zad1-Yb"></div>
+        <div style="width: 100%;"><a>l</a><input type="number" id="zad1-l"></div>
+        <div style="width: 100%;"><a>h</a><input type="number" id="zad1-h"></div>
+        <button onclick="zad1()">Licz</button><br>
+        <p id="zad1-output" class="output">a</p>
+        <h1>Zad 3</h1>
+        <a style="width:100%">strona - określa czy kąt jest prawy czy lewy, p=prawy, l=lewy</a>
+        <div style="width: 100%;"><a>xf</a><input type="number" id="zad3-xf"></div>
+        <div style="width: 100%;"><a>yf</a><input type="number" id="zad3-yf"></div>
+        <div style="width: 100%;"><a>B1</a><input type="number" id="zad3-B1"></div>
+        <div style="width: 100%;"><a>strona</a><input type=text id="strona1"></div>
+        <div style="width: 100%;"><a>l1</a><input type="number" id="zad3-l1"></div>
+        <div style="width: 100%;"><a>B2</a><input type="number" id="zad3-B2"></div>
+        <div style="width: 100%;"><a>strona</a><input type=text id="strona2"></div>
+        <div style="width: 100%;"><a>l2</a><input type="number" id="zad3-l2"></div>
+        <div style="width: 100%;"><a>B3</a><input type="number" id="zad3-B3"></div>
+        <div style="width: 100%;"><a>strona</a><input type=text id="strona3"></div>
+        <div style="width: 100%;"><a>l3</a><input type="number" id="zad3-l3"></div>
+        <button onclick="zad3()">Licz</button><br>
+        <p id="zad3-output" class="output">a</p><br>
+        <h1>Zad 4</h1>
+        <div style="width: 100%;"><a>x1</a><input type="number" id="zad4-x1"></div>
+        <div style="width: 100%;"><a>y1</a><input type="number" id="zad4-y1"></div>
+        <div style="width: 100%;"><a>x2</a><input type="number" id="zad4-x2"></div>
+        <div style="width: 100%;"><a>y2</a><input type="number" id="zad4-y2"></div>
+        <div style="width: 100%;"><a>alpha</a><input type="number" id="zad4-alpha"></div>
+        <div style="width: 100%;"><a>beta</a><input type="number" id="zad4-beta"></div>
+        <button onclick="zad4()">Licz</button><br>
+        <p id="zad4-output" class="output">a</p><br>
+        <h1>Zad 5</h1>
+        <div style="width: 100%;"><a>xp</a><input type="number" id="zad5-xp"></div>
+        <div style="width: 100%;"><a>yp</a><input type="number" id="zad5-yp"></div>
+        <div style="width: 100%;"><a>xl</a><input type="number" id="zad5-xl"></div>
+        <div style="width: 100%;"><a>yl</a><input type="number" id="zad5-yl"></div>
+        <div style="width: 100%;"><a>dp1</a><input type="number" id="zad5-dp1"></div>
+        <div style="width: 100%;"><a>dl1</a><input type="number" id="zad5-dl1"></div>
+        <button onclick="zad5()">Licz</button><br>
+        <p id="zad5-output" class="output">a</p><br>
+        
+        <script src="zad1.js"></script>
+        <script src="zad3.js"></script>
+        <script src="zad4.js"></script>
+        <script src="zad5.js"></script>
+        <script src="gradrad.js"></script>
+        <script src="stoprad.js"></script>
+        <!--
+                var xp = 150.10;
+                var yp = 120.41;
+                var xl = 206.41;
+                var yl = 271.59;
+                var dp1 = 150.20;
+                var dl1 = 160.74;
+        -->
+        <h1></h1>
+    </main>
+</body>

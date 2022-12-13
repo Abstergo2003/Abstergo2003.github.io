@@ -1,0 +1,13 @@
+body {
+    background-color: #e5e5e5;
+    text-align: center;
+}
+a {
+    width: 5vw;
+    display: inline-block;
+}
+.output {
+    background-color: white;
+    width: 1000px;
+    display: inline-block;
+}
