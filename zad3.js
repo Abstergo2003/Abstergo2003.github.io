@@ -1,6 +1,6 @@
 function zad3() {
-    var xe = 726.32;
-    var ye = 810.11;
+    var xe = document.getElementById("zad3-xe").valueAsNumber;
+    var ye = document.getElementById("zad3-ye").valueAsNumber;
     var xf = document.getElementById("zad3-xf").valueAsNumber;
     var yf = document.getElementById("zad3-yf").valueAsNumber;
     var A;
