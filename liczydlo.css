@@ -11,3 +11,63 @@ a {
     width: 1000px;
     display: inline-block;
 }
+table, th, td, tr, td {
+    border: 1px solid black;
+    overflow: hidden;
+}
+tr,td {
+    height: 30px;
+    overflow: hidden;
+}
+.grady {
+    width: 20vw;
+    height: 15vw;
+    position: fixed;
+    top: 5vw;
+    left: -18vw;
+    background-color: aquamarine;
+    border-radius: 2vw;
+    transition: all 0.3s ease-in-out
+}
+.grady:hover {
+    left: 0;
+}
+.stopnie {
+    width: 20vw;
+    height: 15vw;
+    position: fixed;
+    top: 21vw;
+    left: -18vw;
+    background-color: aquamarine;
+    border-radius: 2vw;
+    transition: all 0.3s ease-in-out
+}
+.stopnie:hover {
+    left: 0;
+}
+.revgrady {
+    width: 20vw;
+    height: 15vw;
+    position: fixed;
+    top: 5vw;
+    right: -18vw;
+    background-color: aquamarine;
+    border-radius: 2vw;
+    transition: all 0.3s ease-in-out
+}
+.revgrady:hover {
+    right: 0;
+}
+.revstopnie {
+    width: 20vw;
+    height: 15vw;
+    position: fixed;
+    top: 21vw;
+    right: -18vw;
+    background-color: aquamarine;
+    border-radius: 2vw;
+    transition: all 0.3s ease-in-out
+}
+.revstopnie:hover {
+    right: 0;
+}

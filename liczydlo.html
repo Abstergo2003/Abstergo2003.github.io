@@ -16,13 +16,40 @@
 <body>
     <main>
         <h1>Zanim zaczniesz używać</h1>
-        <ul style="width: 300px; display: inline-block; text-align:left">
-            <li>Kąty wprowadzaj tylko w radianach</li>
+        <ul style="width: 300px; display: inline-block; text-align:left; background-color: red; color:white">
+            <li>Kąty wprowadzaj tylko w radianach, po bokach są przeliczniki, te zielonkawe gówna</li>
             <li>Math.sin(x) = sin(x)</li>
             <li>Math.sqrt(x) = x^(1/2)</li>
             <li>Math.pow(x,2)= x^2</li>
-            <li>Jeżeli ktoś uważa że się pomyliłem w wprowadzaniu wzorów, kontakt R. Korszla</li>
+            <li>Te skrypty działają z całą pewnością na  zadaniach których wzory prezentowanr są poniżej, jeśli jednak uważasz że zadziałają dla twojego zadania także, to robisz to na własną odpowiedzialność</li>
+            <li>W sumie w ogóle nie biorę odpowiedzialności za te rozwiązania</li>
         </ul>
+        <div class="grady">
+          <a>Grady na radiany: np 235,5150</a><br>
+          <input type="number" id="gradradb"><br>
+          <button onclick="gradradb()">Licz</button><br>
+          <p id="gradradoutputb"></p>
+        </div>
+        <div class="stopnie">
+          <a>Stopnie na radiany: np 326,8956</a><br>
+          <input type="number" id="stopradb"><br>
+          <button onclick="stopradb()">Licz</button><br>
+          <p id="stopradoutputb"></p>
+        </div>
+      </div>
+      <div class="revgrady">
+        <a>Radiany na grady</a><br>
+        <input type="number" id="radgrad"><br>
+        <button onclick="radgrad()">Licz</button><br>
+        <p id="radgrad-out"></p>
+      </div>
+    </div>
+    <div class="revstopnie">
+      <a>Radiany na stopnie</a><br>
+      <input type="number" id="radstop"><br>
+      <button onclick="radstop()">Licz</button><br>
+      <p id="radstop-out"></p>
+    </div>
         <h1>Grady na radiany</h1>
         <div style="width: 100%;"><a>Grady: np 235,5150</a><input type="number" id="gradrad"></div>
         <button onclick="gradrad()">Licz</button><br>
@@ -32,6 +59,7 @@
         <button onclick="stoprad()">Licz</button><br>
         <p id="stopradoutput" class="output">a</p>
         <h1>Zad 1</h1>
+        <img style="width: 80%; margin-bottom: 2vw;" src="zad1.PNG">
         <div style="width: 100%;"><p>p = prawa, l = lewa, s = środek</p><a>side</a><input type="text" id="zad1-side"></div>
         <div style="width: 100%;"><a>Xa</a><input type="number" id="zad1-Xa"></div>
         <div style="width: 100%;"><a>Ya</a><input type="number" id="zad1-Ya"></div>
@@ -42,6 +70,7 @@
         <button onclick="zad1()">Licz</button><br>
         <p id="zad1-output" class="output">a</p>
         <h1>Zad 3</h1>
+        <img style="width: 80%; margin-bottom: 2vw;" src="zad3.PNG">
         <a style="width:100%">strona - określa czy kąt jest prawy czy lewy, p=prawy, l=lewy</a>
         <div style="width: 100%;"><a>xe</a><input type="number" id="zad3-xe"></div>
         <div style="width: 100%;"><a>ye</a><input type="number" id="zad3-ye"></div>
@@ -59,23 +88,52 @@
         <button onclick="zad3()">Licz</button><br>
         <p id="zad3-output" class="output">a</p><br>
         <h1>Zad 4</h1>
-        <div style="width: 100%;"><a>x1</a><input type="number" id="zad4-x1"></div>
-        <div style="width: 100%;"><a>y1</a><input type="number" id="zad4-y1"></div>
-        <div style="width: 100%;"><a>x2</a><input type="number" id="zad4-x2"></div>
-        <div style="width: 100%;"><a>y2</a><input type="number" id="zad4-y2"></div>
+        <img style="width: 80%; margin-bottom: 2vw;" src="zad4.PNG">
+        <div style="width: 100%;"><a>xg</a><input type="number" id="zad4-x1"></div>
+        <div style="width: 100%;"><a>yg</a><input type="number" id="zad4-y1"></div>
+        <div style="width: 100%;"><a>xh</a><input type="number" id="zad4-x2"></div>
+        <div style="width: 100%;"><a>yh</a><input type="number" id="zad4-y2"></div>
         <div style="width: 100%;"><a>alpha</a><input type="number" id="zad4-alpha"></div>
         <div style="width: 100%;"><a>beta</a><input type="number" id="zad4-beta"></div>
         <button onclick="zad4()">Licz</button><br>
         <p id="zad4-output" class="output">a</p><br>
         <h1>Zad 5</h1>
+        <img style="width: 80%; margin-bottom: 2vw;" src="zad5.PNG">
         <div style="width: 100%;"><a>xp</a><input type="number" id="zad5-xp"></div>
         <div style="width: 100%;"><a>yp</a><input type="number" id="zad5-yp"></div>
         <div style="width: 100%;"><a>xl</a><input type="number" id="zad5-xl"></div>
         <div style="width: 100%;"><a>yl</a><input type="number" id="zad5-yl"></div>
-        <div style="width: 100%;"><a>dp1</a><input type="number" id="zad5-dp1"></div>
-        <div style="width: 100%;"><a>dl1</a><input type="number" id="zad5-dl1"></div>
+        <div style="width: 100%;"><a>dp1</a><input type="number" id="zad5-dl1"></div>
+        <div style="width: 100%;"><a>dl1</a><input type="number" id="zad5-dp1"></div>
         <button onclick="zad5()">Licz</button><br>
         <p id="zad5-output" class="output">a</p><br>
+        <h1>Poligon zamknięty - N i 1000(x,y)</h1>
+        <img style="width: 20vw;" src="xyn.PNG">
+        <div style="width: 100%;"><a>G</a><input type="number" id="poligonz-g"></div>
+        <div style="width: 100%;"><a>n</a><input type="number" id="poligonz-n"></div>
+        <button onclick="nxy()">Licz</button><br>
+        <p id="poligonzw-output" class="output">a</p><br>
+        <h1>Poligon zamknięty</h1>
+        <img style="width: 30vw" src="poligonz.PNG"> <br>
+        <div style="width: 100%;"><a>l/p</a><input type="text" id="poligonz-sB"></div>
+        <div style="width: 100%;"><a>x0</a><input type="number" id="poligonz-x0"></div>
+        <div style="width: 100%;"><a>y0</a><input type="number" id="poligonz-y0"></div>
+        <div style="width: 100%;"><a>A0</a><input type="number" id="poligonz-A0"></div>
+        <div style="width: 100%;"><a>mb</a><input type="number" id="poligonz-mb"></div>
+        <div style="width: 100%;"><a>B0</a><input type="number" id="poligonz-B0"></div>
+        <div style="width: 100%;"><a>B1</a><input type="number" id="poligonz-B1"></div>
+        <div style="width: 100%;"><a>B2</a><input type="number" id="poligonz-B2"></div>
+        <div style="width: 100%;"><a>B3</a><input type="number" id="poligonz-B3"></div>
+        <div style="width: 100%;"><a>B4</a><input type="number" id="poligonz-B4"></div>
+        <div style="width: 100%;"><a>B5</a><input type="number" id="poligonz-B5"></div>
+        <div style="width: 100%;"><a>d0</a><input type="number" id="poligonz-d0"></div>
+        <div style="width: 100%;"><a>d1</a><input type="number" id="poligonz-d1"></div>
+        <div style="width: 100%;"><a>d2</a><input type="number" id="poligonz-d2"></div>
+        <div style="width: 100%;"><a>d3</a><input type="number" id="poligonz-d3"></div>
+        <div style="width: 100%;"><a>d4</a><input type="number" id="poligonz-d4"></div>
+        <div style="width: 100%;"><a>d5</a><input type="number" id="poligonz-d5"></div>
+        <button onclick="poligonz()">Licz</button><br>
+
         
         <script src="zad1.js"></script>
         <script src="zad3.js"></script>
@@ -83,14 +141,292 @@
         <script src="zad5.js"></script>
         <script src="gradrad.js"></script>
         <script src="stoprad.js"></script>
+        <script src="nxy.js"></script>
+        <script src="poligonz.js"></script>
+        <script src="poligono.js"></script>
+        <script src="gradradb.js"></script>
+        <script src="stopradb.js"></script>
+        <script src="radgrad.js"></script>
+        <script src="radstop.js"></script>
         <!--
-                var xp = 150.10;
-                var yp = 120.41;
-                var xl = 206.41;
-                var yl = 271.59;
-                var dp1 = 150.20;
-                var dl1 = 160.74;
+
         -->
-        <h1></h1>
+        <table style="float: left; border: 1px solid black; border-collapse: collapse;">
+            <thead>
+              <tr>
+                <th class="tg-0lax">nr</th>
+                <th class="tg-0lax">kąty b <br>pomierzone</th>
+                <th class="tg-0lax">kąty b <br>wyrównane</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0lax">1000</td>
+                <td class="tg-0lax" id="B0"></td>
+                <td class="tg-0lax" id="Bp0"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1001</td>
+                <td class="tg-0lax" id="B1"></td>
+                <td class="tg-0lax" id="Bp1"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1002</td>
+                <td class="tg-0lax" id="B2"></td>
+                <td class="tg-0lax" id="Bp2"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1003</td>
+                <td class="tg-0lax" id="B3"></td>
+                <td class="tg-0lax" id="Bp3"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1004</td>
+                <td class="tg-0lax" id="B4"></td>
+                <td class="tg-0lax" id="Bp4"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1005</td>
+                <td class="tg-0lax" id="B5"></td>
+                <td class="tg-0lax" id="Bp5"></td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">1000</td>
+                <td class="tg-0lax"></td>
+                <td class="tg-0lax"></td>
+              </tr>
+            </tbody>
+            </table>
+                <table style="float: left; border: 1px solid black; border-collapse: collapse;">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax" style="height: 45px;  width: 100px">azymuty</th>
+                    <th class="tg-0lax">zredukowane <br>długości</th>
+                    <th class="tg-0lax">dx <br>obliczone</th>
+                    <th class="tg-0lax">dy <br>obliczone</th>
+                    <th class="tg-0lax">dx <br>wyrównane</th>
+                    <th class="tg-0lax">dy <br>wyrównane</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" id="A0"></td>
+                    <td class="tg-0lax" id="d0"></td>
+                    <td class="tg-0lax" id="dx0"></td>
+                    <td class="tg-0lax" id="dy0"></td>
+                    <td class="tg-0lax" id="dxw0"></td>
+                    <td class="tg-0lax" id="dyw0"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="A1"></td>
+                    <td class="tg-0lax" id="d1"></td>
+                    <td class="tg-0lax" id="dx1"></td>
+                    <td class="tg-0lax" id="dy1"></td>
+                    <td class="tg-0lax" id="dxw1"></td>
+                    <td class="tg-0lax" id="dyw1"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="A2"></td>
+                    <td class="tg-0lax" id="d2"></td>
+                    <td class="tg-0lax" id="dx2"></td>
+                    <td class="tg-0lax" id="dy2"></td>
+                    <td class="tg-0lax" id="dxw2"></td>
+                    <td class="tg-0lax" id="dyw2"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="A3"></td>
+                    <td class="tg-0lax" id="d3"></td>
+                    <td class="tg-0lax" id="dx3"></td>
+                    <td class="tg-0lax" id="dy3"></td>
+                    <td class="tg-0lax" id="dxw3"></td>
+                    <td class="tg-0lax" id="dyw3"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="A4"></td>
+                    <td class="tg-0lax" id="d4"></td>
+                    <td class="tg-0lax" id="dx4"></td>
+                    <td class="tg-0lax" id="dy4"></td>
+                    <td class="tg-0lax" id="dxw4"></td>
+                    <td class="tg-0lax" id="dyw4"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="A5"></td>
+                    <td class="tg-0lax" id="d5"></td>
+                    <td class="tg-0lax" id="dx5"></td>
+                    <td class="tg-0lax" id="dy5"></td>
+                    <td class="tg-0lax" id="dxw5"></td>
+                    <td class="tg-0lax" id="dyw5"></td>
+                  </tr>
+                </tbody>
+                </table>
+                    <table style="float: left; border: 1px solid black; border-collapse: collapse;">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax" style="width: 100px">x</th>
+                        <th class="tg-0lax" style="width: 100px">y</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax" id="x0"></td>
+                        <td class="tg-0lax" id="y0"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" id="x1"></td>
+                        <td class="tg-0lax" id="y1"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" id="x2"></td>
+                        <td class="tg-0lax" id="y2"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" id="x3"></td>
+                        <td class="tg-0lax" id="y3"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" id="x4"></td>
+                        <td class="tg-0lax" id="y4"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" id="x5"></td>
+                        <td class="tg-0lax" id="y5"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax" id="x6"></td>
+                        <td class="tg-0lax" id="y6"></td>
+                      </tr>
+                    </tbody>
+                    </table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Poligon otwarty</h1>
+        <img style="width: 30%; margin-bottom: 2vw;" src="poligono.PNG">
+        <div style="width: 100%;"><a>x3</a><input type="number" id="poligono-x3"></div>
+        <div style="width: 100%;"><a>y3</a><input type="number" id="poligono-y3"></div>
+        <div style="width: 100%;"><a>x2</a><input type="number" id="poligono-x2"></div>
+        <div style="width: 100%;"><a>y2</a><input type="number" id="poligono-y2"></div>
+        <div style="width: 100%;"><a>x5</a><input type="number" id="poligono-x5"></div>
+        <div style="width: 100%;"><a>y5</a><input type="number" id="poligono-y5"></div>
+        <div style="width: 100%;"><a>x4</a><input type="number" id="poligono-x4"></div>
+        <div style="width: 100%;"><a>y4</a><input type="number" id="poligono-y4"></div>
+        <div style="width: 100%;"><a>B2</a><input type="number" id="poligono-B2"></div>
+        <div style="width: 100%;"><a>B3</a><input type="number" id="poligono-B3"></div>
+        <div style="width: 100%;"><a>B4</a><input type="number" id="poligono-B4"></div>
+        <div style="width: 100%;"><a>d1</a><input type="number" id="poligono-d1"></div>
+        <div style="width: 100%;"><a>d2</a><input type="number" id="poligono-d2"></div>
+        <div style="width: 100%;"><a>mb</a><input type="number" id="poligono-mb"></div>
+        <div style="width: 100%;"><a>l/p</a><input type="text" id="poligono-side"></div>
+        <button onclick="poligono()">Licz</button><br>
+
+          <table style="float: left; border: 1px solid black; border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th class="tg-0pky">nr</th>
+              <th class="tg-0lax">kąty pomierzone B</th>
+              <th class="tg-0lax">kąty wyrównane B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0pky">1003</td>
+              <td class="tg-0lax">xxxxxxxxxxx</td>
+              <td class="tg-0lax">xxxxxxxxxxx</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">1002</td>
+              <td class="tg-0lax" id="tpoligono-B2"></td>
+              <td class="tg-0lax" id="tpoligono-B2p"></td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">1600</td>
+              <td class="tg-0lax" id="tpoligono-B3"></td>
+              <td class="tg-0lax" id="tpoligono-B3p"></td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">1005</td>
+              <td class="tg-0lax" id="tpoligono-B4"></td>
+              <td class="tg-0lax" id="tpoligono-B4p"></td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">1004</td>
+              <td class="tg-0lax">xxxxxxxxxxx</td>
+              <td class="tg-0lax">xxxxxxxxxxx</td>
+            </tr>
+          </tbody>
+          </table>
+            <table style="float: left; border: 1px solid black; border-collapse: collapse;">
+            <thead>
+              <tr>
+                <th class="tg-0pky" style="height: 45px">azymuty</th>
+                <th class="tg-0lax">zredukowane <br>długości d</th>
+                <th class="tg-0lax">dx <br>obliczony</th>
+                <th class="tg-0lax">dy <br>obliczony</th>
+                <th class="tg-0lax">dx <br>zredukowany</th>
+                <th class="tg-0lax">dy <br>zredukowany</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0pky" id="tpoligono-Ap"></td>
+                <td class="tg-0lax">xxxxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky" id="tpoligono-A1"></td>
+                <td class="tg-0lax" id="tpoligono-d1"></td>
+                <td class="tg-0lax" id="tpoligono-dx1"></td>
+                <td class="tg-0lax" id="tpoligono-dy1"></td>
+                <td class="tg-0lax" id="tpoligono-dx1p"></td>
+                <td class="tg-0lax" id="tpoligono-dy1p"></td>
+              </tr>
+              <tr>
+                <td class="tg-0pky" id="tpoligono-A2"></td>
+                <td class="tg-0lax" id="tpoligono-d2"></td>
+                <td class="tg-0lax" id="tpoligono-dx2"></td>
+                <td class="tg-0lax" id="tpoligono-dy2"></td>
+                <td class="tg-0lax" id="tpoligono-dx2p"></td>
+                <td class="tg-0lax" id="tpoligono-dy2p"></td>
+              </tr>
+              <tr>
+                <td class="tg-0pky" id="tpoligono-Ak"></td>
+                <td class="tg-0lax">xxxxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxxxx</td>
+                <td class="tg-0lax">xxxxxxxxxxxxx</td>
+              </tr>
+            </tbody>
+            </table>
+              <table style="float: left; border: 1px solid black; border-collapse: collapse;">
+              <thead>
+                <tr>
+                  <th class="tg-0pky" style="width: 100px">x</th>
+                  <th class="tg-0lax" style="width: 100px">y</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-0pky" id="tpoligono-x3"></td>
+                  <td class="tg-0lax" id="tpoligono-y3"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky" id="tpoligono-x2"></td>
+                  <td class="tg-0lax" id="tpoligono-y2"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky" id="tpoligono-x600"></td>
+                  <td class="tg-0lax" id="tpoligono-y600"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky" id="tpoligono-x5"></td>
+                  <td class="tg-0lax" id="tpoligono-y5"></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky" id="tpoligono-x4"></td>
+                  <td class="tg-0lax" id="tpoligono-y4"></td>
+                </tr>
+              </tbody>
+              </table>
     </main>
 </body>

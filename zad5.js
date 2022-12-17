@@ -4,8 +4,8 @@ function zad5() {
     var yp = document.getElementById("zad5-yp").valueAsNumber;
     var xl = document.getElementById("zad5-xl").valueAsNumber;
     var yl = document.getElementById("zad5-yl").valueAsNumber;
-    var dp1 = document.getElementById("zad5-dl1").valueAsNumber;
-    var dl1 = document.getElementById("zad5-dp1").valueAsNumber;
+    var dp1 = document.getElementById("zad5-dp1").valueAsNumber;
+    var dl1 = document.getElementById("zad5-dl1").valueAsNumber;
     var dlp = Math.sqrt(Math.pow(yp-yl,2) + Math.pow(xp-xl,2));
     output5.innerHTML = "";
     output5.innerHTML += "dlp = Math.sqrt(Math.pow(yp-yl,2) + Math.pow(xp-xl,2))";
