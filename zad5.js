@@ -7,6 +7,7 @@ function zad5() {
     var dp1 = document.getElementById("zad5-dp1").valueAsNumber;
     var dl1 = document.getElementById("zad5-dl1").valueAsNumber;
     var dlp = Math.sqrt(Math.pow(yp-yl,2) + Math.pow(xp-xl,2));
+    var side = document.getElementById("zad5-side").value;
     output5.innerHTML = "";
     output5.innerHTML += "dlp = Math.sqrt(Math.pow(yp-yl,2) + Math.pow(xp-xl,2))";
     output5.innerHTML += "<br>";
@@ -69,6 +70,7 @@ function zad5() {
         }
     }
     console.log(A);
+    if (side == "p") {
     var x1 = xp + p * Math.cos(A) + h * Math.sin(A);
     output5.innerHTML += "x1 = xp + p * Math.cos(A) + h * Math.sin(A)";
     output5.innerHTML += "<br>";
@@ -81,4 +83,20 @@ function zad5() {
     output5.innerHTML += "y1 = ";
     output5.innerHTML += y1;
     output5.innerHTML += "<br>";
+} else if (side == "l") {
+    var x1 = xp + p * Math.cos(A) - h * Math.sin(A);
+    output5.innerHTML += "x1 = xp + p * Math.cos(A) - h * Math.sin(A)";
+    output5.innerHTML += "<br>";
+    output5.innerHTML += "x1 = ";
+    output5.innerHTML += x1;
+    output5.innerHTML += "<br>";
+    var y1 = yp + p * Math.sin(A) + h * Math.cos(A);
+    output5.innerHTML += "y1 = yp + p * Math.sin(A) + h * Math.cos(A)";
+    output5.innerHTML += "<br>";
+    output5.innerHTML += "y1 = ";
+    output5.innerHTML += y1;
+    output5.innerHTML += "<br>";
+} else {
+    console.log("ty debilu wpisz p lub l")
+}
 }
