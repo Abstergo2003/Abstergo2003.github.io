@@ -6,7 +6,7 @@ function zad3() {
     var A;
     var str1 = document.getElementById("strona1").value;
     var str2 = document.getElementById("strona2").value;
-    var str2 = document.getElementById("strona2").value;
+    var str3 = document.getElementById("strona2").value;
     var rad = Math.atan(Math.abs((yf - ye) / (xf -xe)));
     console.log(rad);
     var output2 = document.getElementById("zad3-output");
