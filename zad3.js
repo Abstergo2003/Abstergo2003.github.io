@@ -105,14 +105,14 @@ function zad3() {
     var l2 = document.getElementById("zad3-l2").valueAsNumber;
     var A3;
     var B2 = document.getElementById("zad3-B2").valueAsNumber;
-    if (str1 == "p") {
+    if (str2 == "p") {
         var A3 = A2 - B2 + Math.PI;
         output2.innerHTML += "A3 = A2 - B2 + PI;";
         output2.innerHTML += "<br>"
         output2.innerHTML += "A3 = ";
         output2.innerHTML += A3;
         output2.innerHTML += "<br>"
-    } else if (str1 == "l") {
+    } else if (str2 == "l") {
         var A3 = A2 + B2 - Math.PI;
         output2.innerHTML += "A3 = A2 + B2 - PI;";
         output2.innerHTML += "<br>"
@@ -143,14 +143,14 @@ function zad3() {
     var l3 = document.getElementById("zad3-l3").valueAsNumber;
     var A4;
     var B3 = document.getElementById("zad3-B3").valueAsNumber;
-    if (str1 == "p") {
+    if (str3 == "p") {
         var A4 = A3 - B3 + Math.PI;
         output2.innerHTML += "A4 = A3 - B3 + PI;";
         output2.innerHTML += "<br>"
         output2.innerHTML += "A4 = ";
         output2.innerHTML += A4;
         output2.innerHTML += "<br>"
-    } else if (str1 == "l") {
+    } else if (str3 == "l") {
         var A4 = A3 + B3 - Math.PI;
         output2.innerHTML += "A4 = A3 + B3 - PI;";
         output2.innerHTML += "<br>"
