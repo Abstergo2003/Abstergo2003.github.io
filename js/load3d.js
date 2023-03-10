@@ -44,7 +44,7 @@ let scene, camera, renderer;
         div.appendChild(renderer.domElement);
 
         let loader = new THREE.GLTFLoader();
-        loader.load('https://pp-group.com.pl/new.gltf', function(gltf){
+        loader.load('https://abstergo2003.github.io/new.gtlf', function(gltf){
           car = gltf.scene.children[0];
           car.scale.set(0.5,0.5,0.5);
           scene.add(gltf.scene);
