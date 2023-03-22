@@ -96,7 +96,7 @@ body {
     position: absolute;
     scroll-behavior: smooth;
     background-color: #222322;
-    left: 0vw;
+    left: 240vw;
     transition: all 0.3s ease-in-out;
 }
 #slide6 {
@@ -105,7 +105,7 @@ body {
     position: absolute;
     scroll-behavior: smooth;
     background-color: #222322;
-    left: 60vw;
+    left: 0vw;
     transition: all 0.3s ease-in-out;
 }
 #slide7 {
@@ -114,7 +114,7 @@ body {
     position: absolute;
     scroll-behavior: smooth;
     background-color: #222322;
-    left: 120vw;
+    left: 60vw;
     transition: all 0.3s ease-in-out;
 }
 #slide8 {
@@ -123,7 +123,25 @@ body {
     position: absolute;
     scroll-behavior: smooth;
     background-color: #222322;
+    left: 120vw;
+    transition: all 0.3s ease-in-out;
+}
+#slide9 {
+    width: 60vw;
+    height: 40vw;
+    position: absolute;
+    scroll-behavior: smooth;
+    background-color: #222322;
     left: 180vw;
+    transition: all 0.3s ease-in-out;
+}
+#slide10 {
+    width: 60vw;
+    height: 40vw;
+    position: absolute;
+    scroll-behavior: smooth;
+    background-color: #222322;
+    left: 240vw;
     transition: all 0.3s ease-in-out;
 }
 .desc-pic {
@@ -325,7 +343,7 @@ body {
     font-size: 20px;
     height: 50px;
 }
-#dc_desc, #chrome_desc, #mobile_desc, #html_desc, #dc_desc2, #chrome_desc2, #mobile_desc2, #html_desc2 {
+#dc_desc, #chrome_desc, #mobile_desc, #html_desc, #dc_desc2, #chrome_desc2, #mobile_desc2, #html_desc2, #desktop_desc, #desktop_desc2{
     height: 0;
     transition: all 0.3s ease-in-out;
 }

@@ -89,3 +89,17 @@ function template2(id) {
         desc.style.height = '30px'
     }
 }
+function desktop2(id) {
+    var desc = document.getElementById('desktop_desc2')
+    if (id == 'snake') {
+        desc.innerHTML = 'Snake## to po prostu gra typu wężyk. Nie jestem dobry w pisaniu gier, oraz JS nie jest językiem do tego stworzonym, więc wężyk jest tak naprawdę linią rysowaną w canvasie, tak samo jak wszystkie przeszkody. Mimo tego, dzięki swojej prostocie gra będzie działać płynnie. Możesz zbierać jabłka, ale z każdą zmianą kierunku wąż będzie zrzucał skórę, tworząc dla siebie przeszkody. Gdy dobijesz do 2000 punktów, losowe przeszkody zaczną się pojawiać na mapie. Gdy przekroczysz 5000, dostaniesz możliwość zdobycia super mocy, która sprawi że będziesz nieśmiertelny przez jakieś 10s. Możesz też wyczyścić mapę ze wszystkich przeszkód, za koszt jabłek.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '120px'
+    } else {
+        desc.innerHTML = 'Aplikacja Random Hentai została stworzona na bazie poprzedniego rozszerzenia o tej samej nazwie. Gdy poznałem lepiej JS, nauczyłem się webscraping’u. Sprawiłem więc by rozszerzenie było w stanie zdobyć okładkę i tagi hentajca. Niestety, zostałem zablokowany przez politykę CORS, zdecydowałem wtedy że stworzę z tego aplikacje komputerową. Ale oznaczało to, że muszę dodać więcej funkcji. Dodałem więc, sekcje „Ulubione”, „Pobieranie” które nie wymaga torrenta. Możesz także randomizować hentajce zwierające dane tagi'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '100px'
+    }
+}

@@ -89,3 +89,17 @@ function template(id) {
         desc.style.height = '30px'
     }
 }
+function desktop(id) {
+    var desc = document.getElementById('desktop_desc')
+    if (id == 'snake') {
+        desc.innerHTML = 'Snake## is just a <b>snake game</b>. I am not very good at writing games like this, and JS is not typically used for it so snake is actually line drawn in canvas, so are all the obstacles. Yet, due to its simplicity game will <b>run smoothly</b>. You can <b>gather apples</b>, but with every turn you make, you grow more body so you drop them and makes <b>obstacles for yourself</b>. When you hit 2000 points, random <b>obstacles</b> will appear on map. When you hit 5000, you will be able to get <b>power up</b> making you immortal for like 10s. Lastly there is possibility of <b>clearing map</b> at costs of you apples. Enjoy!'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '100px'
+    } else {
+        desc.innerHTML = 'Random Hentai app originated from, Random Hentai extension, but then all you could do was to get random link. After getting better at JS, i learned about <b>webscraping</b>. So I made that extension was able to get <b>cover and tags of hentai</b>. Unfortunately CORS policy blocked me from porting this to Extension. I decided to make it as <b>desktop app</b>, but for desktop app to be only doing this? No, I <b>added several features</b> like adding hentais to <b>favourite</b> and <b>downloading</b> them without torrent. Also you can randomize your output hentais by <b>tags</b>.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '100px'
+    }
+}
