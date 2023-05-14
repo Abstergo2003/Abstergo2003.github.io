@@ -96,10 +96,15 @@ function desktop(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '100px'
-    } else {
+    } else if (id == 'RH') {
         desc.innerHTML = 'Random Hentai app originated from, Random Hentai extension, but then all you could do was to get random link. After getting better at JS, i learned about <b>webscraping</b>. So I made that extension was able to get <b>cover and tags of hentai</b>. Unfortunately CORS policy blocked me from porting this to Extension. I decided to make it as <b>desktop app</b>, but for desktop app to be only doing this? No, I <b>added several features</b> like adding hentais to <b>favourite</b> and <b>downloading</b> them without torrent. Also you can randomize your output hentais by <b>tags</b>.'
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '100px'
+    } else {
+        desc.innerHTML = 'no description yet'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '30px'
     }
 }
