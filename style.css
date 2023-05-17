@@ -300,7 +300,26 @@ body {
     text-align: center;
     margin-left: 2.5%;
     margin-top: 60px;
-    border: 5px solid #222322
+    border: 5px solid #222322;
+    position: relative;
+}
+.outer a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+    filter: invert(95%) sepia(11%) saturate(0%) hue-rotate(157deg) brightness(95%) contrast(83%);
+}
+.outer a img {
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+}
+.outer a:hover {
+    background-color: #DADADA;
+    filter: none;
 }
 .main_logo {
     width: 300px;

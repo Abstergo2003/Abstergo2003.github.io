@@ -49,6 +49,11 @@ function extensions2(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '50px'
+    } else if (id == 'he') {
+        desc.innerHTML = 'Jeżeli strona na którą często wchodzisz posiada elementy które chciałbyś ukryć wypróbuj to rozszerzenie. Wciskając "alt" i klikając w dowolny element sprawisz iż zniknie on na zawsze. No nie na zawsze, jeżeli wejdziesz w okienko popup rozszezenia zobaczysz swoje ukryte elementy i będziesz mógł je przywrócić'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '80px'
     }
 }
 function mobile2(id) {
@@ -96,10 +101,25 @@ function desktop2(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '120px'
-    } else {
+    } else if (id =='RH') {
         desc.innerHTML = 'Aplikacja Random Hentai została stworzona na bazie poprzedniego rozszerzenia o tej samej nazwie. Gdy poznałem lepiej JS, nauczyłem się webscraping’u. Sprawiłem więc by rozszerzenie było w stanie zdobyć okładkę i tagi hentajca. Niestety, zostałem zablokowany przez politykę CORS, zdecydowałem wtedy że stworzę z tego aplikacje komputerową. Ale oznaczało to, że muszę dodać więcej funkcji. Dodałem więc, sekcje „Ulubione”, „Pobieranie” które nie wymaga torrenta. Możesz także randomizować hentajce zwierające dane tagi'
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '100px'
+    } else if (id == 'MH') {
+        desc.innerHTML = 'MangaHouse to platforma internetowa do sprzedaży/kupna mangi czy novelek. W zestawie jest wyspecjalizowany serwer. Aplikacja ma wbudowany moduł TTS (tekst-do-mowy). MangaHouse pozwala na komentowanie i ocenianie produktów.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '50px'
+    } else if (id == 'dnd') {
+        desc.innerHTML = 'DnD## to aplikacja zaprojektowana z myślą o tworzeniu arkuszy postaci oraz grania online. Ma ona mnóstwo wbudowanych funkcji, mimo to game master jest wicąż potrzebny, nie ma tu systemu tur i nic nie zatrzymuje cię od wykonania ruchu w dowolnym momencie więc system jest bardzo elastyczny. Pamiętaj jednak że z każdej podjętej czynności będzie wysyłany log.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '90px'
+    } else {
+        desc.innerHTML = 'brak opisu'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '30px'
     }
 }

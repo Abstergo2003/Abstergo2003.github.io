@@ -49,6 +49,12 @@ function extensions(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '50px'
+    } else if (id == 'he') {
+        //Jeżeli strona na którą często wchodzisz posiada elementy które chciałbyś ukryć wypróbuj to rozszerzenie. Wciskając "alt" i klikając w dowolny element sprawisz iż zniknie on na zawsze. No nie na zawsze, jeżeli wejdziesz w okienko popup rozszezenia zobaczysz swoje ukryte elementy i będziesz mógł je przywrócić
+        desc.innerHTML = 'Is there any site you enter frequently but has some lements you would like to hide? If yes, try this extensions, by holding "alt" and clicking on element you will make it dissapear for ever. Well not for ever, you will be able to revert changes by entering popup window and deleting element from list.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '70px'
     }
 }
 function mobile(id) {
@@ -101,6 +107,16 @@ function desktop(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '100px'
+    } else if(id == 'MH') {
+        desc.innerHTML = 'MangaHouse is online platform for selling/buying mangas and novels. It was written with specialized server. Has prebuilt TTS(text-to-speach) module. You can even comment and rate products.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '50px'
+    } else if (id == 'dnd') {
+        desc.innerHTML = 'DnD## is dnd portal for character sheet building, and online playing. It has a lot of prebuil game function yet still requires game master, there is not turns and there is noting stopping you from making a move out of your turn so the system is very flexible. Yet there will be sont log of every action you take.'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '80px'
     } else {
         desc.innerHTML = 'no description yet'
         desc.style.display = 'block'
