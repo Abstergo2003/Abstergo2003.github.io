@@ -9,7 +9,7 @@ function loadBlog() {
     .then((response)=>{
         console.log(response)
         var blogHolder = document.querySelector('.blog')
-        for (var i = 0; i< response.length; i++) {
+        for (var i = response.length; i > 0; i--) {
             blogHolder.innerHTML += `
             <div class="msg">
                 <span>${response[i].title}</span><br>
