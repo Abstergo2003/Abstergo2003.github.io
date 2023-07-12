@@ -1,0 +1,106 @@
+* {
+    --white: #b6b5b5;
+    --deep_orange: #f05012;
+    --red_like: #f8231f;
+    --our_black: #09080b;
+    --weak_orange: #f17e54;
+    font-family: inherit;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'normal';
+    background-color: var(--our_black);
+    text-align: center;
+}
+.image {
+    width: calc(100% / 6);
+    height: 50vh;
+    float: left;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+.image img {
+    width: calc(100vw / 6);
+    height: 50vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s ease-in-out;
+    filter: brightness(50%)
+}
+.container {
+    width: calc(80% - 40px);
+    margin-left: 10%;
+    font-size: 2.5vh;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: var(--white)
+}
+#opis {
+    color: var(--deep_orange);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active {
+    transition: all .2s ease-in-out;
+    width: 35% !important;
+}
+.active img {
+    width: 35vw;
+    height: auto;
+    filter: none;
+}
+.active .flyer {
+    bottom: 20px !important
+}
+.disabled {
+    width: 13% !important;
+}
+.disabled img {
+    width: calc(100vw / 6) !important;
+    filter: brightness(50%)
+}
+.disabled .flyer {
+    bottom: calc(-8vh - 20px) !important;
+}
+.flyer {
+    width: calc(90% - 10px);
+    height: 8vh;
+    z-index: 999;
+    background-color: var(--deep_orange);
+    position: absolute;
+    bottom: calc(-8vh - 20px);
+    left: 5%;
+    font-size: 2vh;
+    line-height: 4vh;
+    text-align: left;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+    color: var(--our_black)
+}
+.flyer span:nth-child(1) {
+    font-size: 3vh;
+}
+.flyer b {
+    color: var(--our_black) !important
+}
+h1 {
+    font-family: 'special';
+    font-size: 8vh;
+    color: var(--deep_orange)
+}
+table {
+    width: 80%;
+    margin-left: 10%
+}
+a {
+    color: var(--red_like);
+    text-decoration: none;
+}
+b {
+    color: var(--red_like)
+}
