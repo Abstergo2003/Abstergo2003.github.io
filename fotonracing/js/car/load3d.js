@@ -6,9 +6,16 @@ let isDown = false
 let lastScrollTime = 0;
 let lastScrollPosition = 0;
 const maxScrollSpeed = 50;
-for (var i = 0; i <spans.length; i++) {
+if (window.screen.width < 900) {
+  for (var i = 0; i <spans.length; i++) {
+    spans[i].style.top = 70 + i*6 + 'vh'
+  }
+} else {
+  for (var i = 0; i <spans.length; i++) {
     spans[i].style.top = 20 + i*6 + 'vh'
+  }
 }
+
       function init() {
 
         scene = new THREE.Scene();
@@ -48,16 +55,25 @@ for (var i = 0; i <spans.length; i++) {
         renderer = new THREE.WebGLRenderer({antialias:true});
         renderer.setSize(500,500);
         const div = document.getElementById("model")
+        const div2 = document.getElementById("model2")
         div.appendChild(renderer.domElement);
+        div2.appendChild(renderer.domElement);
 
         let loader = new THREE.GLTFLoader();
-        loader.load('img/car/vehicle-dummy.gltf', function(gltf){
+        loader.load('img/car/vehicle.gltf', function(gltf){
           car = gltf.scene.children[6];
           ambient = gltf.scene.children[0]
           ambient.scale.set(0.5,0.5,0.5);
           ambient.visible = false
           scene.add(gltf.scene);
           animate();
+          var canvas = document.getElementsByTagName('canvas')[0]
+          var canvas2 = document.getElementsByTagName('canvas')[1]
+          canvas.style.width = '100%'
+          canvas.style.height = '100%'
+
+          canvas2.style.width = '100%'
+          canvas2.style.height = '100%'
         });
       }
       function animate() {
@@ -78,15 +94,47 @@ for (var i = 0; i <spans.length; i++) {
         lastScrollPosition = window.pageYOffset;
       }
 window.onscroll = function(e) {
+  if (window.screen.width < 900) {
+    console.log('smartphone')
+    return 0
+  }
   handleScroll()
   console.log(this.scrollY)
-    if (this.scrollY%100 == 0 && !wasDown) {
-        var elem = spans[Math.floor(this.scrollY / 100)-1]
+    if (this.scrollY > 250) {
+        var elem = spans[0]
         elem.classList.add('animated')
         elem.addEventListener('animationend', ()=>{
             console.log('ended')
+            elem.style.transition = 'none'
             elem.style.right = 'calc(60vh + 10% + 20px + 20px)'
         })
+    }
+    if (this.scrollY > 500) {
+      var elem = spans[1]
+      elem.classList.add('animated')
+      elem.addEventListener('animationend', ()=>{
+          console.log('ended')
+          elem.style.transition = 'none'
+          elem.style.right = 'calc(60vh + 10% + 20px + 20px)'
+      })
+    }
+    if (this.scrollY > 750) {
+      var elem = spans[2]
+      elem.classList.add('animated')
+      elem.addEventListener('animationend', ()=>{
+          console.log('ended')
+          elem.style.transition = 'none'
+          elem.style.right = 'calc(60vh + 10% + 20px + 20px)'
+      })
+    }
+    if (this.scrollY > 1000) {
+      var elem = spans[3]
+      elem.classList.add('animated')
+      elem.addEventListener('animationend', ()=>{
+          console.log('ended')
+          elem.style.transition = 'none'
+          elem.style.right = 'calc(60vh + 10% + 20px + 20px)'
+      })
     }
     if (this.scrollY >= 1000) {
         for (var i = 0; i< spans.length; i++) {
@@ -128,5 +176,4 @@ window.onscroll = function(e) {
     renderer.render(scene,camera);
   }
   this.oldScroll = this.scrollY;
-  
 }

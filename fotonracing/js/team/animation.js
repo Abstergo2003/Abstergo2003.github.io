@@ -1,14 +1,7 @@
-const opisy = [
-    "Opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 opis1 ",
-    "opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 opis2 ",
-    "opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 opis3 ",
-    "opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 opis4 ",
-    "opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 opis5 ",
-    "opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 opis6 "
-]
+
 document.addEventListener('mouseover', (e)=>{
     let id = e.target.id
-    if (id == '' || id== 'opis2' || id=='opis') {
+    if (id == '' || id== 'opis2' || id=='opis' || id=="special") {
         document.getElementById('c1').classList.remove('disabled')
         document.getElementById('c1').classList.remove('active')
 
@@ -37,5 +30,4 @@ document.addEventListener('mouseover', (e)=>{
 
     document.getElementById('c' + id).classList.remove('disabled')
     document.getElementById('c' + id).classList.add('active')
-    document.querySelector('#opis2').innerText = opisy[+id-1]
 })
