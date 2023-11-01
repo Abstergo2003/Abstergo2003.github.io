@@ -116,10 +116,15 @@ function desktop2(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '90px'
+    } else if(id == 'gmt'){ 
+        desc.innerHTML = 'DnD GM Tools## to aplikacja wypełniona po brzegi każdą możliwą użyteczną funkcją stworzoną specjalnie dla mistrzów gry DnD, zarządzaj questami, twórz mapy lub itemy, lub postacie. Każda możliwa funkcja jest juz w aplikacji. W przyszłości zostanie dodana funkcja śledzenia historii campanii, a także możliwość dzielenia się mapami w intenecie. Miłej zabawy!'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '70px'
     } else {
         desc.innerHTML = 'brak opisu'
         desc.style.display = 'block'
         desc.style.padding = '2%'
-        desc.style.height = '30px'
+        desc.style.height = '70px'
     }
 }

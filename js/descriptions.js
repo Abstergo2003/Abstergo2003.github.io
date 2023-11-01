@@ -50,7 +50,6 @@ function extensions(id) {
         desc.style.padding = '2%'
         desc.style.height = '50px'
     } else if (id == 'he') {
-        //Jeżeli strona na którą często wchodzisz posiada elementy które chciałbyś ukryć wypróbuj to rozszerzenie. Wciskając "alt" i klikając w dowolny element sprawisz iż zniknie on na zawsze. No nie na zawsze, jeżeli wejdziesz w okienko popup rozszezenia zobaczysz swoje ukryte elementy i będziesz mógł je przywrócić
         desc.innerHTML = 'Is there any site you enter frequently but has some lements you would like to hide? If yes, try this extensions, by holding "alt" and clicking on element you will make it dissapear for ever. Well not for ever, you will be able to revert changes by entering popup window and deleting element from list.'
         desc.style.display = 'block'
         desc.style.padding = '2%'
@@ -117,10 +116,15 @@ function desktop(id) {
         desc.style.display = 'block'
         desc.style.padding = '2%'
         desc.style.height = '80px'
+    } else if (id == 'gmt'){
+        desc.innerHTML = 'DnD GM Tools## is application filled to the brimm with every possible usefull features created specially for Game Masters in DnD, organise quests, create maps, or items or characters. Everythink you can imagine is already in app. In future there will be added option of tracking company history, and sharing maps to the outside world. Enjoy!!'
+        desc.style.display = 'block'
+        desc.style.padding = '2%'
+        desc.style.height = '70px'
     } else {
         desc.innerHTML = 'no description yet'
         desc.style.display = 'block'
         desc.style.padding = '2%'
-        desc.style.height = '30px'
+        desc.style.height = '70px'
     }
 }
