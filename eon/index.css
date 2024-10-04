@@ -1,0 +1,78 @@
+* {
+    --white: #f2faff;
+    --primary: #bb1513;
+    --primary-opacity: #bb16136c;
+    --secondary : #434242;
+    --onTertiary: #323232;
+    --inversePrimary: #0d7b11;
+    --surfaceTint: #3c653a;
+    --surface: #6dbe69;
+    color: var(--white);
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--secondary);
+    scroll-behavior: smooth;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--onTertiary);
+    text-align: left;
+}
+.header img {
+    height: 40px;
+    padding: 10px;
+}
+.header-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-button:hover {
+    background-color: var(--primary-opacity);
+}
+.image-slider {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: calc(100vh - 140px);
+}
+.slider-timer {
+    position: absolute;
+    left: 0;
+    top: calc(100vh - 145px);
+    width: 20px;
+    height: 5px;
+    background-color: var(--primary);
+    animation: timer 5s infinite linear;
+}
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 140px);
+    background-color: var(--onTertiary);
+}
+.card img {
+    width: 100%;
+    height: calc(100% - 5px);
+}
+@keyframes timer {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100vw;
+    }
+}
