@@ -8,6 +8,8 @@
     --surfaceTint: #3c653a;
     --surface: #6dbe69;
     color: var(--white);
+    padding: 0;
+    margin: 0;
 }
 html, body {
     padding: 0;
@@ -15,6 +17,8 @@ html, body {
     width: 100vw;
     background-color: var(--secondary);
     scroll-behavior: smooth;
+    scroll-padding: 70px;
+    overflow-x: hidden;
 }
 .header {
     position: fixed;
@@ -23,6 +27,7 @@ html, body {
     width: 100vw;
     background-color: var(--onTertiary);
     text-align: left;
+    z-index: 9999;
 }
 .header img {
     height: 40px;
@@ -75,4 +80,22 @@ html, body {
     100% {
         width: 100vw;
     }
+}
+.contents {
+    width: 100vw;
+    margin-top: 140px;
+}
+.content {
+    width: 70vw;
+    margin-left: 15vw;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.content img {
+    width: 30vw;
+    border-radius: 25px;
+}
+.content p {
+    font-size: larger;
+    text-align: justify;
 }

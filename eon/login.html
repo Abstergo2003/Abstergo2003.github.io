@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EON-ROCK Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header">
+        <table>
+            <tr>
+                <td>
+                    <a href="index.html"><img src="img/eon_logo.png"></a>
+                </td>
+                <td style="width: 98%;"></td>
+                <td>
+                    <a href="contact.html"><span class="header-button">Kontakt</span></a>
+                </td>
+                <td>
+                    <a href="login.html"><span class="header-button">Zaloguj</span></a>
+                </td>
+                <td style="width: 2%;"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="login-form">
+        <div class="cover">
+            <div class="center1">
+                <h2>Logowanie</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur provident molestias possimus eligendi dolor perspiciatis aliquid qui alias laudantium numquam accusantium, asperiores, odit nobis totam laborum deserunt, a rerum rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic ipsum omnis ad, atque quo sunt saepe temporibus esse fugiat doloremque molestias recusandae tenetur minima dolor magnam commodi eum maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illo est culpa quam similique qui quibusdam saepe, asperiores eius voluptatibus doloribus, molestias facilis, adipisci ullam deserunt deleniti eveniet aliquam possimus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quaerat commodi necessitatibus, temporibus, quia blanditiis illo quod nemo id expedita dolore veniam nulla accusamus. Veritatis ratione doloribus odio impedit adipisci.</p>
+            </div>
+
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%; padding: 10px">
+                    <div class="center1">
+                        <label for="login-from-email">Email:</label><br>
+                        <input type="email" id="login-from-email">
+                        <br><br>
+                        <label for="login-from-name">Imię:</label><br>
+                        <input type="email" id="login-from-name">
+                        <br><br>
+                        <label for="login-from-surname">Nazwisko:</label><br>
+                        <input type="email" id="login-from-surname">
+                        <br><br>
+                        <label for="login-from-password">Hasło:</label><br>
+                        <input type="email" id="login-from-password">
+                        <br><br>
+                        <button>Rejestruj</button>
+                        <p style="text-align: right;" onclick="showLogin()">Logowanie -></p>
+                    </div>
+                </td>
+                <td style="width: 50%; padding: 10px">
+                    <div class="center2">
+                        <label for="login-from-email">Email:</label><br>
+                        <input type="email" id="login-from-email">
+                        <br><br>
+                        <label for="login-from-password">Hasło:</label><br>
+                        <input type="email" id="login-from-password">
+                        <br><br>
+                        <button>Loguj</button>
+                        <p onclick="showRegister()"><- Rejestracja</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function showRegister() {
+            let cover = document.querySelector(".cover");
+            cover.style.left = "50%";
+            cover.querySelector("h2").innerText = "Rejestracja";
+        }
+        function showLogin() {
+            let cover = document.querySelector(".cover");
+            cover.style.left = "0%";
+            cover.querySelector("h2").innerText = "Logowanie";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+* {
+    --white: #f2faff;
+    --primary: #bb1513;
+    --primary-opacity: #bb16136c;
+    --secondary : #434242;
+    --onTertiary: #323232;
+    --inversePrimary: #0d7b11;
+    --surfaceTint: #3c653a;
+    --surface: #6dbe69;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--secondary);
+    scroll-behavior: smooth;
+    scroll-padding: 70px;
+    overflow-x: hidden;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--onTertiary);
+    text-align: left;
+}
+.header img {
+    height: 40px;
+    padding: 10px;
+}
+.header-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-button:hover {
+    background-color: var(--primary-opacity);
+}
+.login-form {
+    margin-top: 140px;
+    width: calc(70vw - 60px);
+    margin-left: 15vw;
+    background-color: var(--onTertiary);
+    border-radius: 10px;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+.login-form label {
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.login-form input {
+    width: calc(100% - 20px);
+    height: 40px;
+    background-color: var(--secondary);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.center1 {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.center2 {
+    margin-top: 50%;
+    transform: translateY(-100%);
+}
+.login-form button {
+    padding: 10px;
+    background-color: var(--primary);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100px;
+    margin-left: calc(50% - 45px);
+    transition: all .25s ease-in-out;
+}
+.login-form button:hover {
+    background-color: var(--primary-opacity);
+}
+.cover {
+    position: absolute;
+    width: calc(50% - 60px);
+    height: 100%;
+    left: 0%;
+    background-color: var(--primary);
+    z-index: 9999;
+    padding: 30px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+.cover h2 {
+    font-size: 30px;
+}
+.cover p  {
+    color: var(--white) !important;
+    text-align: justify;
+    width: 100%;
+}
+.login-form p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+}
