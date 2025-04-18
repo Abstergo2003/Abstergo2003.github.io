@@ -9,6 +9,18 @@ body {
     text-align: center;
     margin-bottom: 100px;
 }
+.tool {
+    background-color: #222322;
+    width: fit-content;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.tool a {
+    color: white;
+    text-decoration: none;
+}
 .starting-div {
     background-color: #222322;
     width: 100%;
